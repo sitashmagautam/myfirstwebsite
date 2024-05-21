@@ -1,0 +1,300 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    transition: 2s;
+}
+
+header {
+    background-color: rgba(76, 88, 79, 0.798);
+
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(54, 229, 38);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+li {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+li:hover {
+    background-color: rgb(255, 244, 127);
+    cursor: pointer;
+    color: grey;
+
+}
+
+.section1 {
+    width: 100%;
+    /* height: 450px; */
+    background-color: aquamarine;
+    padding: 100%;
+}
+
+.container {
+    position: relative;
+    height: 90px;
+    width: 80%;
+    margin: auto;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.section1 h1 {
+    position: absolute;
+    font-size: 60px;
+    color: blueviolet;
+    top: 100%;
+    right: 100px;
+}
+
+.section1 p {
+    position: absolute;
+    bottom: 85%;
+    font-size: 30px;
+    width: 45%;
+    text-align: right;
+    color: blueviolet;
+    right: 100px;
+}
+
+.left {
+    position: absolute;
+    left: 0%;
+    top: 300px;
+}
+
+.right {
+    position: absolute;
+    right: 18%;
+    bottom: 350px;
+}
+
+.div1 {
+    position: relative;
+    width: 75%;
+    margin: auto;
+}
+
+.about {
+    background-image: linear-gradient(75deg, blue, white);
+    padding: 30px 50px;
+}
+
+.about h1 {
+    font-size: 60px;
+    color: yellow;
+    text-transform: capitalize;
+}
+
+.about_sub {
+    display: flex;
+    background-image: linear-gradient(75deg, pink, red);
+    border-radius: 20%;
+    border-left-style: dashed;
+    border-right-style: dashed;
+
+
+    padding: 50px;
+
+}
+
+.about p {
+    width: 40%;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+    color: blueviolet;
+
+}
+
+.about .img {
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+}
+
+.img img:hover {
+    transform: scale(1.5);
+
+}
+
+.gallery {
+    background-image: linear-gradient(75deg, rgb(0, 153, 255), white);
+    padding: 30px;
+
+}
+
+.gallery h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+.gallery_container {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 50%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.gallery_item {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+    /* padding: 15px; */
+
+    cursor: pointer;
+    transition: 0s;
+
+
+
+
+}
+
+.gallery_item img {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery_item:hover {
+    box-shadow: 0 0 10px 5px rgb(184, 11, 92);
+    transform: scale(1.2);
+
+}
+.blog_content{
+    background-image: linear-gradient(75deg,rgb(0, 179, 255), white);
+    padding: 30px 30px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+}
+.blog_text{
+    width: 60%;
+    
+}
+.blog_image{
+    width: 40%;
+    height: 200px;
+   
+}
+.blog_image img{
+    height: 150%;
+    width: 90%;
+   
+}
+.blog_content h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    color:white;
+}
+.blog_content p{
+    margin-right: 30px;
+    font-size: 30px;
+    color:orangered;
+}
+.blog_content h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(0, 26, 255);
+}
+.blog_text p{
+    text-align: justify;
+
+}
+.blog{
+    padding: 25px;
+    background-image: linear-gradient(75deg,rgb(0,179,225),white);
+
+}
+.contact_section{
+    background-color: aqua;
+    padding: 30px 30px;
+    font-size: 40px;
+    text-transform: capitalize;
+   
+    
+}
+.content_section h1{
+    font-size: 50px;
+    color: white;
+    
+}
+.contact{
+    display: flex;
+}
+
+.address{
+    background-color: rgb(174, 0, 255);
+    width: 50%;
+    padding: 50px;
+}
+.address h2{
+    font-size:30px ;
+}
+.address h3{
+    font-size: 30px;
+}
+.address h4{
+    font-size: 30px;
+}
+.address h5{
+    font-size: 30px;
+}
+.form{
+    background-color:plum;
+    padding: 30px;
+}
+.form label{
+    font-size: 30px;
+    display: block;
+}
+.form input, .form textarea .form button{
+    width: 100%;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    margin-top: 10px;
+}
+.form textarea{
+    height: 120px;
+    resize: none;
+}
+.form button{
+    background-color: bisque;
+    color: white;
+}
+.map{
+    width: 100%;
+    height: 300px;
+}
+.map iframe{
+    height: 100%;
+    width: 100%;
+}
