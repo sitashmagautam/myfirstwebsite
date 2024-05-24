@@ -288,9 +288,11 @@ li:hover {
     outline:none;
     margin-top: 10px;
 }
+
 .form textarea{
     height: 120px;
     resize: none;
+    width: 100%;
 }
 .form button{
     background-color: bisque;
