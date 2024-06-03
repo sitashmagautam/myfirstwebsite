@@ -1,7 +1,5 @@
 * {
     margin: 0%;
-    box-sizing: border-box;
-    transition: 2s;
 }
 
 header {
@@ -13,7 +11,7 @@ nav {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    color: rgb(54, 229, 38);
+    color: rgb(38, 216, 229);
     font-size: 20px;
     text-transform: capitalize;
 }
@@ -30,6 +28,9 @@ li:hover {
     cursor: pointer;
     color: grey;
 
+}
+li:active{
+    color: red;
 }
 
 .section1 {
@@ -275,6 +276,7 @@ li:hover {
 .form{
     background-color: plum;
     padding: 30px;
+   
   
     
 } 
@@ -283,8 +285,8 @@ li:hover {
     display: block;
 }
 .form input, .form textarea .form button{
-    width: 100%;
-    height: 10px;
+    width: 70%;
+    height: 5px;
     font-size: 20px;
     padding: 30px;
     border-radius: 10px;
@@ -297,12 +299,14 @@ li:hover {
 .form textarea{
     height: 120px;
     resize: none;
-    width: 100%;
+    width: 100%; 
+    
 }
 .form button{
     background-color: bisque;
     color: red;
     width: 100%;
+   
     height: 40px;
     font-size: 20px;
 }
@@ -318,4 +322,53 @@ li:hover {
 .map iframe{
     height: 100%;
     width: 100%;
+}
+@media screen and (max-width:500px){
+    nav{
+        flex-direction: column;
+    }
+    .section h1{
+        font-size: 32px;
+        top: 20%;
+    }
+    .section1{
+        padding: 10px;
+    }
+    .container{
+        width: 90%;
+    }
+    .section1 button{
+        top: 20%;
+    }
+    .section1 p{
+        top: 50%;
+        font-size: 12px;
+
+    }
+    .about h1{
+        font-size: 50px;
+       
+        
+
+    }
+    .about p{
+        font-size:  30px;
+        top: 50%;
+    }
+    .about .img{
+        width: 100%;
+        border-radius: 10%;
+    }
+    .about_sub{
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .gallery h1{
+        font-size: 80px;
+    }
+    .gallery_container{
+        flex-direction: column;
+        /* padding: 10px; */
+        border-radius: 10px;
+    }
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        *{
+
+        }
+        .demo, .demo1{
+            height: 300px;
+            width: 300px;
+         
+        }
+        .demo{
+            background-color: aquamarine;
+        }
+        .demo1{
+            background-color: palevioletred;
+        }
+        .demo:hover{
+            /* transform: translate(-100px,-100px); */
+            /* transform: rotate(360deg); */
+            /* transform: skew(10deg,10deg); */
+            /* transform: translate(100px, 100px) rotate(360deg) skewY(30deg) scale(0.5); */
+            
+        }
+        @keyframes my_animation{
+            form{
+                background-color: red;
+            }
+            50%{
+                background-color: rgb(255, 60, 0);
+            }
+            100%{
+                border-radius: 50%;
+                 background-color: brown;
+                 transform: translate(100px, 100px) rotate(360deg) skewY(30deg) scale(0.5);
+                 
+            }
+
+        }
+        .demo1{
+            animation-name:my_animation ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            /* animation-fill-mode: backwards; */
+
+
+        }
+        .demo1:hover{
+
+        animation-play-state: paused;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="demo"></div>
+    <div class="demo1"></div>
+    
+</body>
+</html>
