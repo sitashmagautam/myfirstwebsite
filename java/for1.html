@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+        var choice = Number(prompt("1.sum 2.difference 3.product 4.division 5.exponent 6.exit. choose an option"))
+        let a = Number(prompt("enter a"))
+        let b = Number(prompt("enter b"))
+        switch (choice){
+            case 1: 
+            console.log("sum=", (a+b))
+            break
+            case 2: 
+            console.log("difference=", (a-b))
+            break
+            case 3: 
+            console.log("product=", (a*b))
+            break
+            case 4: 
+            console.log("division=", (a/b))
+            break
+            case 5: 
+            console.log("exponent=", (a**b))
+            break
+            case 6: 
+            console.log("exiting")
+            break
+            default:
+                console.log("wrong choice")
+
+            
+            
+                
+        }
+    } while(choice!=6)
+    </script>
+</body>
+</html>
