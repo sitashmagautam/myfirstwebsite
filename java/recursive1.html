@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a function to generate following series up to n terms (fibonacci)-->
+     <script>
+        function fibonacci(n){
+            if(n==1){
+                return 1
+            }
+            else if(n==2){
+                return 1
+            }
+            else{
+                return fibonacci(n-1)+ fibonacci(n-2)
+            }
+        }
+        let n =Number(prompt("enter no of terms"))
+        for(i=1; i<=n; i++){
+            document.write(fibonacci(i)+"<br>")
+        }
+
+
+     </script>
+</body>
+</html>

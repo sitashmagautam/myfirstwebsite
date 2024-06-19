@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="showname()">Show Name</button>
+    <button ondblclick="showname()">Show Name on double click</button>
+    <h1 id="name"></h1>
+    <script>
+        let myname = prompt("enter your name")
+        function showname() {
+            // let myname = 'Sitashma'
+            // document.write(myname)
+            // document.getElementById('name').innerHTML='My Name is ' + myname
+
+            // template literal
+            document.getElementById('name').innerHTML = `My name is ${myname}`
+        }
+    </script>
+</body>
+
+</html>

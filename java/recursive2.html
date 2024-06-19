@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function day(n) {
+            if (n == 1) {
+                document.write("sunday")
+
+            }
+            else if (n == 2) {
+                document.write("monday")
+
+            }
+            else if (n == 3) {
+                document.write("tuesday")
+            }
+            else if (n == 4) {
+                document.write("wednesday")
+            }
+            else if (n == 5) {
+                document.write("thursday")
+            }
+            else if (n == 6) {
+                document.write("friday")
+            }
+            else if (n == 7) {
+                document.write("saturday")
+            }
+            else {
+                document.write("wrong input")
+            }
+        }
+        let n = Number(prompt("enter a number(1-7):"))
+        day(n)
+
+    </script>
+</body>
+
+</html>
