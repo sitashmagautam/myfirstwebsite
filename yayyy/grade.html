@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // wap to inter marks in 7 subject & calculate corresponding grade
+
+        let sub = []
+        for (i = 0; i < 7; i++) {
+            let marks = Number(prompt("enter marks in sub" + (i + 1) + ":"))
+            sub.push(marks)
+        }
+        for (i = 0; i < 7; i++) 
+            document.write("sub " + (i + 1) + ":")
+
+            if (sub[i] > 100) {
+                document.write("error")
+            }
+            else if (sub[i] >= 90) {
+                document.write("A+ <br>")
+            }
+            else if (sub[i] >= 80) {
+                document.write("B+ <br>")
+            }
+            else if (sub[i] >= 70) {
+                document.write("B <br>")
+            }
+            else if (sub[i] >= 60) {
+                document.write("C+ <br> ")
+            }
+            else if (sub[i] >= 50) {
+                document.write("C <br>")
+            }
+            else if (sub[i] >= 40) {
+                document.write("D <br>")
+            }
+            else{
+                document.write("NG")
+            }
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

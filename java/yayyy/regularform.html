@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="fullname" name="fname" onkeyup="name_validate()">
+        <span id="name_msg"></span>
+        <br>
+        <label for="phone">Phone</label>
+        <input type="text" id="Phone" name="Phone">
+        <span id="phone_msg"></span>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" onkeyup="email_validate()">
+        <span id="email_msg"></span>
+        <br>
+        <label for="password">Password</label>
+        <input type="text" id="pass" name="pass">
+        <span id="password_msg"></span>
+        <br>
+        <button id="sumbit">submit</button>
+    </form>
+    <script>
+        let namemsg = document.getElementById("name_msg")
+        function name_validate(){
+            let fullname = document.getElementById("fullname").value
+            if(!fullname.match(/^[a-z]{3,}$/))
+            {
+                namemsg.innerHTML="name must be only alphabets and at least three characters"
+                namemsg.style.color="blue"
+            }
+            else{
+                namemsg.innerHTML="validname"
+                namemsg.style.color="purple"
+            }
+        }
+        let emailtext= document.getElementById("email_msg")
+        function email_validate(){
+            let email=document.getElementById("email").value
+            if(!email.match(/^[a-z][a-z 0-9._]*(@)(gmail)[.](com)$/))
+            {
+                emailtext.innerHTML="there should be specific characters and numbers in the email"
+                emailtext.style.color="red"
+            }
+            else{
+                emailtext.innerHTML="validemail"
+                emailtext.style.color="green"
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
