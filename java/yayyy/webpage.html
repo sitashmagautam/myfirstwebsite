@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+    margin: 0%;
+}
+
+header {
+    background-color: white;
+    display: flex;
+
+}
+header h1{
+    width: 50%;
+    padding:25px;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 50%;
+    align-items: center;
+}
+.fresh{
+    background-image: linear-gradient(75deg, rgba(0, 128, 0, 0.24), white);
+    padding: 30px 50px;
+    height: 80vh;
+    position: relative;
+}
+.fresh h1 {
+    font-size: 60px;
+    color: rgba(0, 100, 0, 0.623);
+    text-transform: capitalize;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+.fresh h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50px;
+    top: 170px;
+    color: rgba(0, 128, 0, 0.349);
+}
+.fresh_sub{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    height: 100%;
+  
+}
+.fresh_sub img{
+    height: 100%;
+}
+.myicon{
+    color: aquamarine;
+}
+
+
+
+    </style>
+</head>
+<div>
+    <header>
+        <h1>Modisite</h1>
+        <nav>
+            
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Dropdown <i class="bi bi-arrow-down myicon"></i></li>
+            <li>Contact Us</li>
+        </nav>
+    </header>
+    
+        <div class="fresh">
+           <h1>fresh style</h1>
+           <h2>New Collection</h2>
+            
+            <div class="fresh_sub">
+                
+                <img src="about.jpg" alt="">
+
+            </div>
+        </div>
+
+    
+</div>
+<body>
+    
+</body>
+</html>

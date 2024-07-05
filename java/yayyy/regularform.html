@@ -41,6 +41,19 @@
                 namemsg.style.color="purple"
             }
         }
+        let phonetext= document.getElementById("phone_msg")
+        function phone_validate(){
+            let Phone =document.getElementById("Phone").value
+            if(!Phone.match(/^98[0-9]{8} $/))
+            {
+                phonetext.innerHTML="there should be only numbers and at least eight characters"
+                phonetext.style.color="pink"
+            }
+            else{
+                phonetext.innerHTML="validemail"
+                phonetext.style.color="green"
+            }
+        }
         let emailtext= document.getElementById("email_msg")
         function email_validate(){
             let email=document.getElementById("email").value
