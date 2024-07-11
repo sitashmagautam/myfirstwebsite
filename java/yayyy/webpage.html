@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-* {
+        * {
             box-sizing: border-box;
             margin: 0%;
         }
@@ -21,7 +23,7 @@
         header h1 {
             width: 50%;
             padding: 25px;
-            color:rgba(255, 217, 0, 0.429);
+            color: rgba(255, 217, 0, 0.429);
         }
 
         nav {
@@ -121,7 +123,7 @@
         }
 
         .about p,
-        .content p {
+        .content p, .client p {
             font-size: 12px;
             color: grey;
             line-height: 25px;
@@ -129,13 +131,15 @@
         }
 
         .about h1,
-        .content h1, .fresh5 h1 {
+        .content h1,
+        .fresh5 h1 , .fresh6 h1 {
             line-height: 80px;
             font-weight: 400;
         }
 
         .about h1 span,
-        .fresh3 h1 span, .fresh5 h1 span{
+        .fresh3 h1 span,
+        .fresh5 h1 span, .fresh6 h1 span  {
             font-size: 24px;
             color: steelblue;
 
@@ -180,7 +184,8 @@
             gap: 5%;
             align-items: center;
         }
-        .left{
+
+        .left {
             background-color: steelblue;
             width: 50%;
             height: 40vh;
@@ -189,199 +194,295 @@
             align-items: center;
             flex-direction: column;
         }
-        .left h1{
+
+        .left h1 {
             color: white;
             font-size: 40px;
-            line-height:96px ;
-            font-weight:400 ;
+            line-height: 96px;
+            font-weight: 400;
         }
-        .left h2{
+
+        .left h2 {
             color: palevioletred;
             font-size: 40px;
             font-weight: 400;
         }
-        .fresh5{
+
+        .fresh5 {
             padding: 55px;
             text-align: center;
         }
-        .services{
+
+        .services {
             display: grid;
             grid-template-columns: auto auto auto;
-            gap :3%;
+            gap: 3%;
             margin: auto;
             padding: 30px;
-            
+
         }
-        .service{
+
+        .service {
             background-color: whitesmoke;
             padding: 15%;
             border-radius: 10px;
             box-shadow: 0 0 5px whitesmoke;
             margin-bottom: 10px;
-        
+
         }
-        .service p{
+
+        .service p {
             color: grey;
             line-height: 15px;
             letter-spacing: 2px;
             font-size: 10px;
         }
-        .service h3{
+
+        .service h3 {
             font-size: 20px;
             line-height: 50px;
             letter-spacing: 2px;
             font-weight: 400;
         }
-        
-        
 
+        .fresh6 {
+            height: 80vh;
+            background-image: url(b6.jpg);
+            background-size:100% auto;
+            background-position: center;
+            padding: 65px ;
+
+        }
+        .fresh6 h1{
+            text-align: right;
+        }
+        .clients{
+            display: flex;
+            justify-content:space-between ;
+            padding: 50px;
+        }
+        .client{
+            background-color: rgba(245, 245, 245,60%);
+            padding: 45px;
+            width: 48%;
+            text-align: center;
+            /* opacity: 50%; */
+            position: relative;
+        }
+        .client h3{
+            margin-top: 25px;
+        }
+       .client img{
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        height: 80px;
+        width: 80px;
+       }
+       .client p{
+        color: rgb(100, 100, 100);
+       }
+       footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px ;
+        padding: 50px;
+       }
+       .icons{
+        width: 25%;
+       display: flex;
+       justify-content: space-evenly;
+       font-size: 20px;
+       color: grey;
+       }
     </style>
 </head>
+
 <body>
-    
 
-<div>
-    <header>
-        <h1>SITASHMA</h1>
-        <nav>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Dropdown</li>
-            <li>Contact Us</li>
-        </nav>
-    </header>
-    <div class="fresh">
-        <h1>fresh style</h1>
-        <h2>New Collection Arrival</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione soluta laudantium, at rerum sunt corrupti
-            reprehenderit quod eligendi adipisci vitae ab ullam sint aspernatur dolores omnis architecto possimus cum
-            et? adipisci vitae ab ullam sint aspernatur dolores omnis </p>
-        <a href="#">Read More</a>
-        <div class="fresh_sub">
+
+    <div>
+        <header>
+            <h1>SITASHMA</h1>
+            <nav>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Dropdown</li>
+                <li>Contact Us</li>
+            </nav>
+        </header>
+        <div class="fresh">
+            <h1>fresh style</h1>
+            <h2>New Collection Arrival</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione soluta laudantium, at rerum sunt
+                corrupti
+                reprehenderit quod eligendi adipisci vitae ab ullam sint aspernatur dolores omnis architecto possimus
+                cum
+                et? adipisci vitae ab ullam sint aspernatur dolores omnis </p>
+            <a href="#">Read More</a>
+            <div class="fresh_sub">
+            </div>
         </div>
     </div>
-</div>
-<div class="fresh2">
-    <div class="about_images">
-        <img src="ab1.jpg" alt="">
-        <img src="ab2.jpg" alt="">
-    </div>
-    <div class="about">
-        <h1>
-            #About <span>Fashion</span>
-        </h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis blanditiis accusantium a iure, voluptate,
-            minus beatae unde sint ipsum laborum corrupti velit dolores dolorem. Ullam ad eum consequatur necessitatibus
-            aspernatur cum eveniet ab fugiat impedit quibusdam accusamus rem facere nesciunt, autem velit asperiores
-            dolores iure id ducimus sed. Corrupti nihil voluptates quos! Fugiat, repudiandae autem, ipsum ratione ullam
-            nihil tempore officia delectus deleniti, magni suscipit in. Provident id temporibus aliquid dolorum quam
-            alias iusto? Porro temporibus ex suscipit mollitia maiores debitis aliquam unde obcaecati? Blanditiis culpa
-            neque provident sunt laudantium.</p>
-        <a href="a">Read More</a>
-    </div>
-</div>
-<div class="fresh3">
-    <h1>#Our <span>Collection</span></h1>
-
-    <div class="collection">
-        <div class="content">
-            <h1>Group Collection</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim? rem ipsum
-                dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim?</p>
+    <div class="fresh2">
+        <div class="about_images">
+            <img src="ab1.jpg" alt="">
+            <img src="ab2.jpg" alt="">
+        </div>
+        <div class="about">
+            <h1>
+                #About <span>Fashion</span>
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis blanditiis accusantium a iure, voluptate,
+                minus beatae unde sint ipsum laborum corrupti velit dolores dolorem. Ullam ad eum consequatur
+                necessitatibus
+                aspernatur cum eveniet ab fugiat impedit quibusdam accusamus rem facere nesciunt, autem velit asperiores
+                dolores iure id ducimus sed. Corrupti nihil voluptates quos! Fugiat, repudiandae autem, ipsum ratione
+                ullam
+                nihil tempore officia delectus deleniti, magni suscipit in. Provident id temporibus aliquid dolorum quam
+                alias iusto? Porro temporibus ex suscipit mollitia maiores debitis aliquam unde obcaecati? Blanditiis
+                culpa
+                neque provident sunt laudantium.</p>
             <a href="a">Read More</a>
         </div>
-        <div class="collection_image">
-            <img src="c1.jpg" alt="">
-
-
-        </div>
     </div>
-    <div class="collection">
-        <div class="collection_image">
-            <img src="c2.jpg" alt="">
-        </div>
-        <div class="content">
-            <h1>Individual Collection</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim? rem ipsum
-                dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim?</p>
-            <a href="a">Read More</a>
-        </div>
+    <div class="fresh3">
+        <h1>#Our <span>Collection</span></h1>
 
-
-
-
-    </div>
-
-    <div class="collection">
-        <div class="content">
-            <h1>Unique Collection</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim? rem ipsum
-                dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim?</p>
-            <a href="a">Read More</a>
-        </div>
-        <div class="collection_images">
-            <div class="collection_image">
-                <img src="c3.jpg" alt="">
+        <div class="collection">
+            <div class="content">
+                <h1>Group Collection</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim? rem
+                    ipsum
+                    dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim?</p>
+                <a href="a">Read More</a>
             </div>
             <div class="collection_image">
-                <img src="ab2.jpg" alt="">
+                <img src="c1.jpg" alt="">
+
+
+            </div>
+        </div>
+        <div class="collection">
+            <div class="collection_image">
+                <img src="c2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Individual Collection</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim? rem
+                    ipsum
+                    dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim?</p>
+                <a href="a">Read More</a>
             </div>
 
 
 
 
         </div>
+
+        <div class="collection">
+            <div class="content">
+                <h1>Unique Collection</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim? rem
+                    ipsum
+                    dolor, sit amet consectetur adipisicing elit. Quasi nam eum quo maiores fugit enim?</p>
+                <a href="a">Read More</a>
+            </div>
+            <div class="collection_images">
+                <div class="collection_image">
+                    <img src="c3.jpg" alt="">
+                </div>
+                <div class="collection_image">
+                    <img src="ab2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
     </div>
 
-</div>
+    <div class="fresh4">
+        <div class="left">
 
-
-
-<div class="fresh4">
-    <div class="left">
-        <h1>
-            Best Fashion Collection
-        </h1>
-        <h2>Get 55% off</h2>
-    </div>
-</div>
-<div class="fresh5">
-    <h1>#Our <span>Services</span></h1>
-    <div class="services">
-        <div class="service">
-            <i class="fa-solid fa-vest-patches fa-2xl" style="color: #74C0FC;"></i>
-            <h3>Tailoring</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-child-dress fa-2xl" style="color: #74C0FC;"></i>
-            <h3>Fashion</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-chart-area fa-2xl" style="color: #74C0FC;"></i>
-            <h3>Emdroidery</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-wand-magic-sparkles fa-2xl" style="color: #74C0FC;"></i>
-            <h3>Ironing</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-handshake-angle fa-2xl" style="color: #74C0FC;"></i>
-            <h3>Stitch</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
-        </div>
-        <div class="service">
-            <i class="fa-regular fa-gem fa-2xl" style="color: #74C0FC;"></i>
-            <h3>Sewing</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            <h1>
+                Best Fashion Collection
+            </h1>
+            <h2>Get 55% off</h2>
         </div>
     </div>
+    <div class="fresh5">
+        <h1>#Our <span>Services</span></h1>
+        <div class="services">
+            <div class="service">
+                <i class="fa-solid fa-vest-patches fa-2xl" style="color: #74C0FC;"></i>
+                <h3>Tailoring</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-child-dress fa-2xl" style="color: #74C0FC;"></i>
+                <h3>Fashion</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-chart-area fa-2xl" style="color: #74C0FC;"></i>
+                <h3>Emdroidery</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-wand-magic-sparkles fa-2xl" style="color: #74C0FC;"></i>
+                <h3>Ironing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-hands-asl-interpreting fa-2xl" style="color: #74C0FC;"></i>
+                <h3>Stitch</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            </div>
+            <div class="service">
+                <i class="fa-regular fa-gem fa-2xl" style="color: #74C0FC;"></i>
+                <h3>Sewing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione qui!</p>
+            </div>
+        </div>
 
-</div>
+    </div>
+    <div class="fresh6">
+        <h1>#Our <span>Clients</span></h1>
+        <div class="clients">
+            <div class="client">
+                <img src="cc2.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit tempore consequuntur repellat quas
+                    voluptate eum qui officia veniam sunt eos distinctio libero tenetur at nam rerum fugit laborum, ad
+                    aspernatur?</p>
+                <h3>Jack will</h3>
+            </div>
+            <div class="client">
+                <img src="cc1.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit tempore consequuntur repellat quas
+                    voluptate eum qui officia veniam sunt eos distinctio libero tenetur at nam rerum fugit laborum, ad
+                    aspernatur?</p>
+                <h3>Rose Son</h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>Modsite</h1>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-share"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>&copy;© 2024 Modiste. All Rights Reserved | Design by Sitashma 
+
+        </p>
+        <i class="fa-solid fa-arrow-up"></i>
+    </footer>
 
 </body>
 
