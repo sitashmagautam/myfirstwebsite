@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
+            scroll-behavior: smooth;
             box-sizing: border-box;
             margin: 0%;
         }
@@ -35,6 +36,18 @@
             text-transform: capitalize;
             width: 50%;
             align-items: center;
+
+        }
+        .menu a{
+            cursor: pointer;
+            font-variant: small-caps;
+            font-weight: bold;
+            color: steelblue;
+            text-decoration: none;
+            
+        }
+        .menu a:hover{
+            text-decoration: underline;
         }
 
         .fresh {
@@ -308,15 +321,16 @@
     <div>
         <header>
             <h1>SITASHMA</h1>
-            <nav>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Dropdown</li>
-                <li>Contact Us</li>
+            <nav class="menu">
+                <a href="#fresh"><li>Home</li></a>
+                <a href="#fresh2"><li>About</li></a>
+                <a href="#fresh3"><li>Collection</li></a>
+                <a href="#fresh5"><li>Services</li></a>
+                <a href="#fresh6"><li>Clients</li></a>
+            
             </nav>
         </header>
-        <div class="fresh">
+        <div class="fresh" id="fresh">
             <h1>fresh style</h1>
             <h2>New Collection Arrival</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione soluta laudantium, at rerum sunt
@@ -329,7 +343,7 @@
             </div>
         </div>
     </div>
-    <div class="fresh2">
+    <div class="fresh2" id="fresh2">
         <div class="about_images">
             <img src="ab1.jpg" alt="">
             <img src="ab2.jpg" alt="">
@@ -351,7 +365,7 @@
             <a href="a">Read More</a>
         </div>
     </div>
-    <div class="fresh3">
+    <div class="fresh3" id="fresh3">
         <h1>#Our <span>Collection</span></h1>
 
         <div class="collection">
@@ -405,7 +419,7 @@
 
     </div>
 
-    <div class="fresh4">
+    <div class="fresh4" id="fresh4">
         <div class="left">
 
             <h1>
@@ -414,7 +428,7 @@
             <h2>Get 55% off</h2>
         </div>
     </div>
-    <div class="fresh5">
+    <div class="fresh5" id="fresh5">
         <h1>#Our <span>Services</span></h1>
         <div class="services">
             <div class="service">
@@ -450,7 +464,7 @@
         </div>
 
     </div>
-    <div class="fresh6">
+    <div class="fresh6" id="fresh6">
         <h1>#Our <span>Clients</span></h1>
         <div class="clients">
             <div class="client">
@@ -481,7 +495,7 @@
         <p>&copy;© 2024 Modiste. All Rights Reserved | Design by Sitashma 
 
         </p>
-        <i class="fa-solid fa-arrow-up"></i>
+     <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
 
 </body>
